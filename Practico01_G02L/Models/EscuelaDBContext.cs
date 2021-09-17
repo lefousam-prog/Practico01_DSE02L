@@ -12,6 +12,8 @@ namespace Practico01_G02L.Models
         public DbSet<Alumno> Alumnos { get; set; }
         public DbSet<Grado> Grados { get; set; }
         public DbSet<Seccion> Secciones { get; set; }
+        public DbSet<Materia> Materias { get; set; }
+        public DbSet<Nota> Notas { get; set; }
 
     }
 }

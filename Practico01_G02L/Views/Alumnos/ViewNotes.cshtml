@@ -1,0 +1,74 @@
+﻿@model IEnumerable<Practico01_G02L.Models.Nota>
+
+@{
+    ViewBag.Title = "Notas";
+
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+
+    
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Idnota)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdAlumno)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdMateria)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nota1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nota2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nota3)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Periodo)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Idnota)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdAlumno)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdMateria)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nota1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nota2)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nota3)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Periodo)
+                </td>
+                <td>
+
+                </td>
+            </tr>
+        }
+
+    </table>
+
+
+
